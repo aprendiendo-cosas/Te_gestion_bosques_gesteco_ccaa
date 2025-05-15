@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **Duración**: Una sesión de 1.5 horas.
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Te_escalas_gobernanza_gesteco_ccaa/2024-2025/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/portada.jpg)
 
 
 
@@ -21,20 +21,80 @@ El objetivo de aprendizaje general es aquirir una serie de ideas básicas para e
 
 
 
-
-
 ## Conceptos relevantes en este ámbito de gestión
+
+### Definición de selvicultura (o silvicultura)
 La gestión de bosques comprende un conjunto de técnicas y procedimientos que permiten manejar los ecosistemas forestales para conseguir un objetivo concreto (ej. obtener madera, setas, conservar la diversidad, etc.). El término concreto que se usa en el ámbito forestal para referirse a este tipo de técnicas y procedimientos es Selvicultura. De manera más concreta, la selvicultura se define como el conjunto de técnicas dedicadas a la conservación, mejora, aprovechamiento y regeneración de las masas forestales ([Ley de Montes de España. Artículo 6](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21339#:~:text=Selvicultura,restauraci%C3%B3n%2C%20de%20las%20masas%20forestales)). Así, el concepto más relevante en este ámbito de gestión es la selvicultura. A él dedicaremos esta sección.
 
 Aunque estas técnicas ponen el foco fundamentalmente en el estrato arbóreo, también hay un cuerpo de conocimiento importante en el ámbito del matorral y las herbáceas. Este ámbito sectorial de gestión es, seguramente, el más "ecosistémico" de todos los que vemos en la asignatura. Los profesionales encargados de llevar a cabo la gestión forestal son los ingenieros forestales y los ingenieros técnicos forestales. En estas disciplinas está fuertemente arraigada la visión sistémica.
 
-Como tal técnica, la selvicultura se encarga de aplicar sobre el terreno una serie de actuaciones para satisfacer un objetivo determinado o para resolver un problema concreto. Todas las técnicas se desarrollan en base a conocimientos de ciencias básicas. En este caso, la selvicultura "bebe" de los avances realizados en la ecología forestal. 
+Como tal técnica, la selvicultura se encarga de aplicar sobre el terreno una serie de actuaciones para satisfacer un objetivo determinado o para resolver un problema concreto. Todas las técnicas se desarrollan en base a conocimientos de ciencias básicas. En este caso, la selvicultura "bebe" de los avances realizados en la ecología forestal, la botánica, la zoología, la climatología y otras disciplinas. 
 
-La selvicultura surgió en el siglo XVIII en Francia y se extendió paulatinamente por toda Europa durante ese siglo. A finales del mismo esta disciplina comienza a integrarse en los mecanismos oficiales de gobernanza. Se crean los llamados Servicios Forestales, organizados para la administración de los bosques. También empiezan a surgir las primeras centros de enseñanza forestal. En esta época la selvicultura se orientó fundamentalmente a restaurar bosques degradados tras siglos de uso insostenible (extracción masiva de madera, ganadería excesiva, etc.). Después se desarrollaron métodos de explotación de madera que no implicaran la desaparición del bosque. Surgen así métodos de explotación forestal muy inspirados en la agricultura: plantación de bosques de coníferas que se explotaban para producir madera. Es decir, tienen una visión poco ecosistémica ya que el objetivo es generar solo un tipo de producto. Esto requiere una planificación muy rígida tanto en el establecimiento de los turnos de corta, como en las actuaciones para reducir la competencia de otras especies. 
+Esta técnica ha experimentado una evolución significativa desde sus inicios hasta la actualidad. Analizar brevemente su historia nos ayudará a entender cómo las técnicas van dotándose de los conocimientos científicos que se van alcanzando a lo largo del tiempo. En el caso de la selvicultura, se pueden definir las siguientes fases históricas:
+
+### Breve historia de la Selvicultura
+#### Etapa precientífica (hasta el siglo XVIII)
+En esta primera fase no había un cuerpo de conocimiento específico que ayudara a los humanos a gestionar de manera sostenible el bosque. Se trataba, más bien, de un conjunto de normas para asignar a cada persona o colectivo una parcela de bosque para explotar de diversas formas: extracción de madera, frutos, pastos, etc. No disponíamos del conocimiento necesario para entender que el uso insostenible de los recursos podía llevar a su desaparición. No había planificación de los recursos y eso provocó un deterioro progresivo de los bosques como consecuencia de la extracción de materiales y de la expansión agrícola. 
+
+En esta fase primaba el conocimiento empírico y observacional. Es decir, se hacían actuaciones en el bosque en función de los resultados previos de actuaciones similares. 
+
+#### Inicios de la selvicultura científica (Siglo XVIII-XX)
+
+La selvicultura moderna surgió en el siglo XVIII en Francia y se extendió paulatinamente por toda Europa durante ese siglo. A finales del mismo esta disciplina comienza a integrarse en los mecanismos oficiales de gobernanza. Se crean los llamados Servicios Forestales, organizados para la administración de los bosques. También empiezan a surgir las primeras centros de enseñanza forestal. En esta época la selvicultura se orientó fundamentalmente a restaurar bosques degradados tras siglos de uso insostenible (extracción masiva de madera, ganadería excesiva, etc.). Después se desarrollaron métodos de explotación de madera que no implicaran la desaparición del bosque. Surgen así métodos de explotación forestal muy inspirados en la agricultura: plantación de bosques de coníferas que se explotaban para producir madera. Es decir, tienen una visión poco ecosistémica ya que el objetivo es generar solo un tipo de producto. Esto requiere una planificación muy rígida tanto en el establecimiento de los turnos de corta, como en las actuaciones para reducir la competencia de otras especies. 
+
+El conocimiento científico que sustentaba la selvicultura en esta época está cercano a lo que hoy denominaríamos "demografía poblacional". Solo se ponía el foco en extraer biomasa del bosque sin que eso condicionara su futura supervivencia. Desde un punto de vista de la ecología, esta aproximación está muy cerca de las técnicas de [explotación de poblaciones](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_explotacion_ecologia_ccaa/2024-2025/guion_explotacion_poblaciones.html) que hemos visto en ecología. 
+
+Esta visión rígida y excesivamente productivista adolecía de una visión sistémica. Solo se ponía el foco en un elemento del ecosistema: los árboles El resultado fue la creación de masas forestales muy densas y poco diversas por toda Europa.
+
+Poco a poco fueron surgiendo ideas que flexibilizaron esta visión. La propuesta de Karl Gayer (1880) de "selvicultura próxima a la naturaleza" es un buen ejemplo de esto. Este autor empezó a promover el uso de procesos naturales para asegurar la regeneración del bosque una vez realizada la extracción de madera. 
+
+
+#### Selvicultura basada en la ecología (Siglo XX-Actualidad)
+
+En la actualidad, la selvicultura se ha beneficiado del aumento del conocimiento ecológico. Hoy día sabemos mucho mejor cómo funcionan los ecosistemas forestales. Esto hace que las técnicas de manejo de los mismos hayan mejorado incorporando nuevas ideas procedentes de la ecología. Ya no se considera que los bosques son meros productores de madera. La selvicultura se concibe como una técnica para producir bienes forestales pero también para conservar, restaurar y gestionar de manera sostenible los ecosistemas forestales. También se incorporan ideas como la resiliencia y la biodiversidad. Es decir, las técnicas de manejo que usa la selvicultura también persiguen promover la resiliencia y la biodiversidad.
+
+Este conjunto de técnicas incorporan en la actualidad conocimiento sobre los siguientes conceptos ecológicos:
+
++ Sucesión ecológica: el hecho de que conozcamos bien cómo se regenera un bosque de forma natural tras una perturbación, ha permitido que se desarrollen técnicas que emulan estas dinámicas naturales y que las aceleran.
++ La biodiversidad: hoy día se reconoce que la diversidad biológica es un elemento clave del funcionamiento de los ecosistemas. Las prácticas de selvicultura favorecen una mezcla de especies, estructuras en varios estratos y la conservación de elementos que antes eran considerados un "estorbo" como los árboles muertos.
++ Los ciclos biogeoquímicos: Hoy sabemos que la extracción de madera de un bosque implica una alteración de los ciclos del nitrógeno y del carbono. Esto ha propiciado el desarrollo de técnicas de manejo que reducen este efecto.
++ Ecología de paisaje: nuestra visión territorial a múltiples escalas, propiciado por los SIG y las imágenes aéreas, ha ayudado a la selvicultura a aplicarse a escala de paisaje. Esto implica tener en cuenta la conectividad ecológica, por ejemplo.
+
+En la actualidad coexisten varios tipos de selvicultura que coexisten y que son coherentes con la historia anterior:
+
+
+
+### Selvicultura monofuncional
+Esta modalidad considera que el bosque debe de producir solo un tipo de producto. Es una especie de explotación agrícola con la diferencia de que los productos son forestales. Puede orientarse a la producción de madera, corcho o resina. El objetivo es maximizar la producción de un producto concreto.
+
+Se caracteriza fundamentalmente por:
++ La masa forestal es muy homogénea. Los árboles suelen tener la misma edad y tamaño.
++ Hay muy poca diversidad biológica.
++ La densidad del bosque es muy alta y se trata de reducir la competencia mediante la eliminación de otras especies.
++ Los árboles son fertilizados y regados si es necesario. Esto también permite que haya mucha densidad de árboles. Es decir, hay un manejo muy intenso. 
++ Estas explotaciones suelen ubicarse en lugares donde ya no hay bosques naturales.
+
+Ejemplos:
++ Plantaciones de pinos o de eucaliptos.
++ Alcornocales en los que solo se extrae corcho.
++ Pinares de los que se extrae resina.
 
 
 
 
+
+Objetivo: Maximizar la producción de un producto específico (generalmente madera o biomasa).
+
+Características: Alta intervención, mejora genética, fertilización, riego, rotaciones cortas.
+
+Técnicas típicas: Plantaciones densas, turnos cortos, uso intensivo de maquinaria.
+
+Ejemplo: Cultivos forestales de eucalipto o chopo en regadío.
+
+### Selvicultura multifuncional
+
+
+### Selvicultura ecologista
 
 
 
