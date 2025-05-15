@@ -78,23 +78,57 @@ Ejemplos:
 + Plantaciones de pinos o de eucaliptos.
 + Alcornocales en los que solo se extrae corcho.
 + Pinares de los que se extrae resina.
++ Plantaciones de chopo para obtener pasta de papel.
 
 
 
+El siguiente esquema muestra el ciclo de vida de una explotación maderera monofuncional. Como se puede ver, buena parte de las actividades recreativas quedan fuera de la explotación.
 
 
-Objetivo: Maximizar la producción de un producto específico (generalmente madera o biomasa).
 
-Características: Alta intervención, mejora genética, fertilización, riego, rotaciones cortas.
+![monofuncional1](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/monofuncional1.png)
 
-Técnicas típicas: Plantaciones densas, turnos cortos, uso intensivo de maquinaria.
+El aspecto de estas explotaciones es parecido al que se muestra en la siguiente imagen.
 
-Ejemplo: Cultivos forestales de eucalipto o chopo en regadío.
+
+
+![monofuncional2](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/monofuncional2.png)
+
+Este tipo de explotaciones monofuncionales aportan aproximadamente la mitad de la producción de madera a escala global. El resto se obtiene de bosques naturales. Desde este punto de vista podemos considerar que la selvicultura monofuncional alivia la presión sobre los bosques naturales. Aunque esto no considera que, probablemente, las explotaciones monofuncionales están donde antes había un bosque mucho más diverso.
+
+
 
 ### Selvicultura multifuncional
 
+Esta modalidad considera el bosque como un sistema complejo y pone el foco en la obtención de distintos tipos de servicios ecosistémicos: madera, leña, frutos, recreación, conservación de la diversidad, regulación del ciclo hidrológico, etc. Esto hace que el sistema genere menos cantidad de bienes pero de muchos tipos diferentes. 
+
+Se caracteriza fundamentalmente por:
+
++ Compatibiliza objetivos productivos, ecológicos y sociales.
++ Usa técnicas de manejo adaptadas a las condiciones locales.
++ Reduce la intervención al mínimo, promoviendo la regeneración natural y el mantenimiento de la diversidad.
++ El bosque resultante tiene varios estratos y hay árboles de distintas edades y tamaños.
++ En los procedimientos de gestión se respetan los árboles viejos y los microhábitats de interés (roquedos, lagunas, etc.)
+
+Ejemplos:
+
++ Gestión de encinares en un parque natural.
++ Manejo de pinares de repoblación sin ánimo de producción de madera.
++ Bosques mixtos con *Quercus* y *Pinus.*
++ Selvicultura tropical sostenible. Se trata de extraer madera de un bosque tropical minimizando el impacto sobre la biodivrersidad.
++ Agroforestería. Técnicas que combinan la producción de servicios en un bosque con el cultivo agrícola. Los árboles ocupan la parte alta del dosel y bajo ellos hay arbustos cultivados o herbáceas. También se puede incorporar ganado.
+
 
 ### Selvicultura ecologista
+
+Esta última modalidad selvícola prioriza la conservación de la biodiversidad y la estabilidad ecológica. La producción de bienes materiales queda relegada a un segundo plano. Suele aplicarse en áreas protegidas en las que la protección es prioritaria.
+
+Ejemplos:
+
++ Gestión de los bosques de pinsapo (*Abies pinsapo*) en Andalucía. 
++ Gestión de los bosques de *Pinus sylvestris* autóctonos.
+
+
 
 
 
