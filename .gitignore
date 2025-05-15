@@ -1,5 +1,5 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+/preparacion
+/releases
+/videos_sesiones
+/entregas
+.DS_Store
