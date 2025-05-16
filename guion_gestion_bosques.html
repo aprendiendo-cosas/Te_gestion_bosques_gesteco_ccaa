@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>guion_gestion_bosques</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='manejo-de-bosques'><span>Manejo de bosques</span></h1><blockquote><ul><li><p><strong><em><span>Tipo de material</span></em></strong><span>: </span><span style="display: inline-block; font-size: 12px; color: white; background-color: #029BF9; border-radius: 5px; padding: 5px; font-weight: bold;"><span> Teoría</span></span></p></li><li><p><strong><em><span>Versión</span></em></strong><span>: 2024-2025</span></p></li><li><p><strong><em><span>Asignatura (grado)</span></em></strong><span>: Gestión de ecosistemas (CCAA)</span></p></li><li><p><strong><em><span>Autor</span></em></strong><span>: Curro Bonet-García (fjbonet@uco.es)</span></p></li><li><p><strong><span>Duración</span></strong><span>: Unas dos horas.</span></p></li></ul></blockquote><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/portada.jpg" referrerpolicy="no-referrer" alt="portada"></p><p>&nbsp;</p><h2 id='objetivos-del-acto-docente'><span>Objetivos del acto docente</span></h2><p><span>Este guión forma parte del bloque 3 de la asignatura de Gestión de ecosistemas en el que abordamos cómo manejamos los socioecosistemas en la realidad. En concreto, este guión trata los procedimientos que hemos creado para manejar los bosques.</span></p><p><span>El objetivo de aprendizaje general es aquirir una serie de ideas básicas para entender el lenguaje de los ingenieros forestales, que son los profesionales encargados de manejar los bosques. De manera más específica, los objetivos son:</span></p><ul><li><p><span>Entender las conexiones entre la ecología y su aplicación a la gestión de bosques.</span></p></li><li><p><span>Conocer los principales conceptos de este ámbito temático: selvicultura.</span></p></li><li><p><span>Entender cómo esos conceptos se traducen, por un lado en disposiciones legales y, por otro en técnicas de manejo específicas. </span></p></li><li><p><span>Aprender en en qué medida los procedimientos de gestión descritos se alinean con la idea de sistema complejo. Al hilo de esto, entender hacia dónde evoluciona o debería de evolucionar este ámbito de gestión.</span></p></li></ul><p>&nbsp;</p><h2 id='definición-y-objetivos-de-la-gestión-de-bosques'><span>Definición y objetivos de la gestión de bosques</span></h2><p><span>La gestión de bosques comprende un conjunto de técnicas y procedimientos que permiten manejar los ecosistemas forestales para conseguir un objetivo concreto (ej. obtener madera, setas, conservar la diversidad, etc.). El término concreto que se usa en el ámbito forestal para referirse a este tipo de técnicas y procedimientos es Selvicultura. De manera más concreta, la selvicultura se define como el conjunto de técnicas dedicadas a la conservación, mejora, aprovechamiento y regeneración de las masas forestales (</span><a href='https://www.boe.es/buscar/act.php?id=BOE-A-2003-21339#:~:text=Selvicultura,restauraci%C3%B3n%2C%20de%20las%20masas%20forestales'><span>Ley de Montes de España. Artículo 6</span></a><span>). Así, el concepto más relevante en este ámbito de gestión es la selvicultura. A él dedicaremos esta sección. </span><a href='https://github.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/raw/2024_2025/biblio/pdf_AM_Ambienta_2009_87_25_34.pdf'><span>Este</span></a><span> artículo contiene muchos de los elementos descritos en este guión. </span></p><p><span>Aunque estas técnicas ponen el foco fundamentalmente en el estrato arbóreo, también hay un cuerpo de conocimiento importante en el ámbito del matorral y las herbáceas. Este ámbito sectorial de gestión es, seguramente, el más &quot;ecosistémico&quot; de todos los que vemos en la asignatura. Los profesionales encargados de llevar a cabo la gestión forestal son los ingenieros forestales y los ingenieros técnicos forestales. En estas disciplinas está fuertemente arraigada la visión sistémica.</span></p><p><span>Como tal técnica, la selvicultura se encarga de aplicar sobre el terreno una serie de actuaciones para satisfacer un objetivo determinado o para resolver un problema concreto. Todas las técnicas se desarrollan en base a conocimientos de ciencias básicas. En este caso, la selvicultura &quot;bebe&quot; de los avances realizados en la ecología forestal, la botánica, la zoología, la climatología y otras disciplinas. </span></p><p>&nbsp;</p><h2 id='breve-historia-de-la-selvicultura-=-gestión-de-bosques'><span>Breve historia de la Selvicultura (= gestión de bosques)</span></h2><p><span>Esta técnica ha experimentado una evolución significativa desde sus inicios hasta la actualidad. Analizar brevemente su historia nos ayudará a entender cómo las técnicas van dotándose de los conocimientos científicos que se van alcanzando a lo largo del tiempo. En el caso de la selvicultura, se pueden definir las siguientes fases históricas:</span></p><h3 id='etapa-precientífica-hasta-el-siglo-xviii'><span>Etapa precientífica (hasta el siglo XVIII)</span></h3><p><span>En esta primera fase no había un cuerpo de conocimiento específico que ayudara a los humanos a gestionar de manera sostenible el bosque. Se trataba, más bien, de un conjunto de normas para asignar a cada persona o colectivo una parcela de bosque para explotar de diversas formas: extracción de madera, frutos, pastos, etc. No disponíamos del conocimiento necesario para entender que el uso insostenible de los recursos podía llevar a su desaparición. No había planificación de los recursos y eso provocó un deterioro progresivo de los bosques como consecuencia de la extracción de materiales y de la expansión agrícola. </span></p><p><span>En esta fase primaba el conocimiento empírico y observacional. Es decir, se hacían actuaciones en el bosque en función de los resultados previos de actuaciones similares. </span></p><h3 id='inicios-de-la-selvicultura-científica-siglo-xviii-xx'><span>Inicios de la selvicultura científica (Siglo XVIII-XX)</span></h3><p><span>La selvicultura moderna surgió en el siglo XVIII en Francia y se extendió paulatinamente por toda Europa durante ese siglo. A finales del mismo esta disciplina comienza a integrarse en los mecanismos oficiales de gobernanza. Se crean los llamados Servicios Forestales, organizados para la administración de los bosques. También empiezan a surgir las primeras centros de enseñanza forestal. En esta época la selvicultura se orientó fundamentalmente a restaurar bosques degradados tras siglos de uso insostenible (extracción masiva de madera, ganadería excesiva, etc.). Después se desarrollaron métodos de explotación de madera que no implicaran la desaparición del bosque. Surgen así métodos de explotación forestal muy inspirados en la agricultura: plantación de bosques de coníferas que se explotaban para producir madera. Es decir, tienen una visión poco ecosistémica ya que el objetivo es generar solo un tipo de producto. Esto requiere una planificación muy rígida tanto en el establecimiento de los turnos de corta, como en las actuaciones para reducir la competencia de otras especies. </span></p><p><span>El conocimiento científico que sustentaba la selvicultura en esta época está cercano a lo que hoy denominaríamos &quot;demografía poblacional&quot;. Solo se ponía el foco en extraer biomasa del bosque sin que eso condicionara su futura supervivencia. Desde un punto de vista de la ecología, esta aproximación está muy cerca de las técnicas de </span><a href='https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_explotacion_ecologia_ccaa/2024-2025/guion_explotacion_poblaciones.html'><span>explotación de poblaciones</span></a><span> que hemos visto en ecología. </span></p><p><span>Esta visión rígida y excesivamente productivista adolecía de una visión sistémica. Solo se ponía el foco en un elemento del ecosistema: los árboles El resultado fue la creación de masas forestales muy densas y poco diversas por toda Europa.</span></p><p><span>Poco a poco fueron surgiendo ideas que flexibilizaron esta visión. La propuesta de Karl Gayer (1880) de &quot;selvicultura próxima a la naturaleza&quot; es un buen ejemplo de esto. Este autor empezó a promover el uso de procesos naturales para asegurar la regeneración del bosque una vez realizada la extracción de madera. </span></p><h3 id='selvicultura-basada-en-la-ecología-siglo-xx-actualidad'><span>Selvicultura basada en la ecología (Siglo XX-Actualidad)</span></h3><p><span>En la actualidad, la selvicultura se ha beneficiado del aumento del conocimiento ecológico. Hoy día sabemos mucho mejor cómo funcionan los ecosistemas forestales. Esto hace que las técnicas de manejo de los mismos hayan mejorado incorporando nuevas ideas procedentes de la ecología. Ya no se considera que los bosques son meros productores de madera. La selvicultura se concibe como una técnica para producir bienes forestales pero también para conservar, restaurar y gestionar de manera sostenible los ecosistemas forestales. También se incorporan ideas como la resiliencia y la biodiversidad. Es decir, las técnicas de manejo que usa la selvicultura también persiguen promover la resiliencia y la biodiversidad.</span></p><p><span>Este conjunto de técnicas incorporan en la actualidad conocimiento sobre los siguientes conceptos ecológicos:</span></p><ul><li><p><span>Sucesión ecológica: el hecho de que conozcamos bien cómo se regenera un bosque de forma natural tras una perturbación, ha permitido que se desarrollen técnicas que emulan estas dinámicas naturales y que las aceleran.</span></p></li><li><p><span>La biodiversidad: hoy día se reconoce que la diversidad biológica es un elemento clave del funcionamiento de los ecosistemas. Las prácticas de selvicultura favorecen una mezcla de especies, estructuras en varios estratos y la conservación de elementos que antes eran considerados un &quot;estorbo&quot; como los árboles muertos.</span></p></li><li><p><span>Los ciclos biogeoquímicos: Hoy sabemos que la extracción de madera de un bosque implica una alteración de los ciclos del nitrógeno y del carbono. Esto ha propiciado el desarrollo de técnicas de manejo que reducen este efecto.</span></p></li><li><p><span>Ecología de paisaje: nuestra visión territorial a múltiples escalas, propiciado por los SIG y las imágenes aéreas, ha ayudado a la selvicultura a aplicarse a escala de paisaje. Esto implica tener en cuenta la conectividad ecológica, por ejemplo.</span></p></li></ul><p>&nbsp;</p><h2 id='fundamentos-científicos-que-sustentan-la-gestión-de-bosques'><span>Fundamentos científicos que sustentan la gestión de bosques </span></h2><p><span>En general, se considera que la selvicultura se sustenta en los siguientes conceptos:</span></p><ul><li><p><span>Simplificación. Un bosque natural inalterado no necesita ser gestionado. Para transformar un sistema natural en otro manejable por el ser humano para extraer ciertos recursos, es imprescindible que haya una simplificación del mismo. Esta simplificación puede variar en intensidad (desde los monocultivos forestales a sistemas multifuncionales, como se indica abajo), pero siempre está presente.</span></p></li><li><p><span>Intervención. De lo anterior se deriva que siempre que hay gestión, debe de haber intervención en el medio. Incluso la no actuación implica intervenir impidiendo la intervención. Esto parece contradictorio...</span></p></li><li><p><span>Persistencia. Un elemento fundamental de la gestión de bosques es que cualquier actuación debe de ir dirigida a que el bosque persista en el dominio del tiempo. </span></p></li></ul><p><span>Los principios anteriores se aplican de manera diferente en los siguientes tipos de selvicultura: </span></p><h3 id='selvicultura-monofuncional'><span>Selvicultura monofuncional</span></h3><p><span>Esta modalidad considera que el bosque debe de producir solo un tipo de producto. Es una especie de explotación agrícola con la diferencia de que los productos son forestales. Puede orientarse a la producción de madera, corcho o resina. El objetivo es maximizar la producción de un producto concreto. Con respecto a los principios que rigen la selvicultura, diríamos que en esta modalidad la simplificación es máxima, así como la intervención. La persistencia del bosque está condicionada en buena medida a las actuaciones de manejo que se realizan en ella. </span></p><p><span>Se caracteriza fundamentalmente por:</span></p><ul><li><p><span>La masa forestal es muy homogénea. Los árboles suelen tener la misma edad y tamaño.</span></p></li><li><p><span>Hay muy poca diversidad biológica.</span></p></li><li><p><span>La densidad del bosque es muy alta y se trata de reducir la competencia mediante la eliminación de otras especies.</span></p></li><li><p><span>Los árboles son fertilizados y regados si es necesario. Esto también permite que haya mucha densidad de árboles. Es decir, hay un manejo muy intenso. </span></p></li><li><p><span>Estas explotaciones suelen ubicarse en lugares donde ya no hay bosques naturales.</span></p></li></ul><p><span>Ejemplos:</span></p><ul><li><p><span>Plantaciones de pinos o de eucaliptos.</span></p></li><li><p><span>Alcornocales en los que solo se extrae corcho.</span></p></li><li><p><span>Pinares de los que se extrae resina.</span></p></li><li><p><span>Plantaciones de chopo para obtener pasta de papel.</span></p></li></ul><p>&nbsp;</p><p><span>El siguiente esquema muestra el ciclo de vida de una explotación maderera monofuncional. Como se puede ver, buena parte de las actividades recreativas quedan fuera de la explotación.</span></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/monofuncional1.png" referrerpolicy="no-referrer" alt="monofuncional1"></p><p><span>El aspecto de estas explotaciones es parecido al que se muestra en la siguiente imagen.</span></p><p>&nbsp;</p><p><img src="https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/monofuncional2.png" referrerpolicy="no-referrer" alt="monofuncional2"></p><p><span>Este tipo de explotaciones monofuncionales aportan aproximadamente la mitad de la producción de madera a escala global. El resto se obtiene de bosques naturales. Desde este punto de vista podemos considerar que la selvicultura monofuncional alivia la presión sobre los bosques naturales. Aunque esto no considera que, probablemente, las explotaciones monofuncionales están donde antes había un bosque mucho más diverso.</span></p><p>&nbsp;</p><h3 id='selvicultura-multifuncional'><span>Selvicultura multifuncional</span></h3><p><span>Esta modalidad considera el bosque como un sistema complejo y pone el foco en la obtención de distintos tipos de servicios ecosistémicos: madera, leña, frutos, recreación, conservación de la diversidad, regulación del ciclo hidrológico, etc. Esto hace que el sistema genere menos cantidad de bienes pero de muchos tipos diferentes. Con respecto a los principios que rigen la selvicultura, diríamos que en esta modalidad la simplificación es media. La intervención es alta, pero poco intensa y localizada. La persistencia del bosque está condicionada a las actuaciones de manejo que se realizan en ella aunque también puede haber regeneración natural. </span></p><p><span>Se caracteriza fundamentalmente por:</span></p><ul><li><p><span>Compatibiliza objetivos productivos, ecológicos y sociales.</span></p></li><li><p><span>Usa técnicas de manejo adaptadas a las condiciones locales.</span></p></li><li><p><span>Reduce la intervención al mínimo, promoviendo la regeneración natural y el mantenimiento de la diversidad.</span></p></li><li><p><span>El bosque resultante tiene varios estratos y hay árboles de distintas edades y tamaños.</span></p></li><li><p><span>En los procedimientos de gestión se respetan los árboles viejos y los microhábitats de interés (roquedos, lagunas, etc.)</span></p></li></ul><p><span>Ejemplos:</span></p><ul><li><p><span>Gestión de encinares en un parque natural.</span></p></li><li><p><span>Manejo de pinares de repoblación sin ánimo de producción de madera.</span></p></li><li><p><span>Bosques mixtos con </span><em><span>Quercus</span></em><span> y </span><em><span>Pinus.</span></em></p></li><li><p><span>Selvicultura tropical sostenible. Se trata de extraer madera de un bosque tropical minimizando el impacto sobre la biodivrersidad.</span></p></li><li><p><span>Agroforestería. Técnicas que combinan la producción de servicios en un bosque con el cultivo agrícola. Los árboles ocupan la parte alta del dosel y bajo ellos hay arbustos cultivados o herbáceas. También se puede incorporar ganado.</span></p></li></ul><h3 id='selvicultura-ecologista'><span>Selvicultura ecologista</span></h3><p><span>Esta última modalidad selvícola prioriza la conservación de la biodiversidad y la estabilidad ecológica. La producción de bienes materiales queda relegada a un segundo plano. Suele aplicarse en áreas protegidas en las que la protección es prioritaria. Con respecto a los principios que rigen la selvicultura, diríamos que en esta modalidad la simplificación es muy baja. La intervención es muy baja. La persistencia del bosque se rige mayoritariamente por los procesos naturales.</span></p><p><span>Ejemplos:</span></p><ul><li><p><span>Gestión de los bosques de pinsapo (</span><em><span>Abies pinsapo</span></em><span>) en Andalucía. </span></p></li><li><p><span>Gestión de los bosques de </span><em><span>Pinus sylvestris</span></em><span> autóctonos.</span></p></li></ul><p>&nbsp;</p><h2 id='métodos-y-técnicas-usadas-para-la-gestión-de-bosques'><span>Métodos y técnicas usadas para la gestión de bosques</span></h2><p><span>La gestión de bosques es una disciplina científico-técnica con gran historia y con gran desarrollo. Por tanto, hay multitud de técnicas útiles. Destacamos solo las herramientas más relevantes:</span></p><ul><li><p><span>Técnicas de evaluación y diagnóstico. Permiten conocer el estado del bosque:</span></p><ul><li><p><span>Dasometría: Es una disciplina técnica que se encarga de medir y cuantificar las características estructurales del bosque, como el número de árboles, su diámetro, altura, volumen, crecimiento o biomasa. Su principal función es proporcionar datos cuantitativos objetivos que permitan entender el estado y la evolución del bosque. </span></p></li><li><p><span>Inventarios forestales: Es un procedimiento sistemático de datos sobre los bosques. La idea es conocer su estado, composición estructura y funcionamiento. Para generar inventarios se usa fundamentalmente la dasometría. </span></p></li><li><p><span>Modelización forestal: Se trata de un conjunto de técnicas que permiten simular cómo funciona el bosque en función de una serie de elementos (tipo de suelo, especies presentes, clima, técnicas de manejo, etc.). La modelización forestal es equivalente a la modelización climática que nos permite simular cómo será el clima tanto en el corto como en el medio y largo plazo. Los resultados de la modelización forestal pueden ayudar a la planificación de las actuaciones en el bosque. </span></p></li></ul></li><li><p><span>Métodos de certificación y verificación. Se trata de mecanismos de evaluación de la calidad de la gestión de bosques. Con ellos se certifica que un área determinada se gestiona conforme a ciertos estándares sostenibles previamente definidos. Hay varias entidades que expiden certificados de gestión forestal sostenible. Los más comunes son </span><a href='https://www.es.fsc.org/es-es'><span>FSC</span></a><span> y </span><a href='https://www.pefc.es/'><span>PEFC</span></a><span>. Los estándares de certificación incluyen criterios de conservación de la biodiversidad, mantenimiento de las funciones ecológicas, respeto a las comunidades locales y pueblos indígenas, etc. Las agencias certificadoras dan una etiqueta de certificación a las explotaciones forestales que cumplan los estándares anteriores. </span></p></li><li><p><span>Técnicas de planificación: permiten ordenar grandes superficies de bosque. Es el equivalente forestal a la planificación urbanística. Gracias a estas técnicas se puede saber en qué lugares y en qué momentos se aplican distintas técnicas selvícolas.</span></p><ul><li><p><span>Ordenación forestal: es un diagnóstico integral del monte que permite definir objetivos de producción de servicios (madera, conservación, recreación, etc.) en distintos puntos del territorio. La ordenación forestal implica la zonificación del territorio.</span></p></li></ul></li><li><p><span>Técnicas selvícolas de intervención en el territorio:</span></p><ul><li><p><span>Claras, aclareos y cortas: son técnicas de extracción de biomasa que permiten la reducción selectiva de la densidad del arbolado.</span></p></li><li><p><span>Resalveos y podas: consiste en podar ejemplares de especies como la encina o los pinos con objeto de, o bien reducir la competencia intraespecífica, o bien fomentar el crecimiento de árboles con un solo tronco (en el caso de las encinas).</span></p></li></ul></li></ul><p>&nbsp;</p><h2 id='ejemplos-relevantes'><span>Ejemplos relevantes</span></h2><p><span>En España hay multitud de ejemplos de gestión de bosques bastante bien implementados. Destaco a modo de ejemplo el caso del pinar de Valsaín, en las provincia de Segovia. </span><a href='https://es.wikipedia.org/wiki/Montes_de_Valsa%C3%ADn'><span>Este</span></a><span> artículo de Wikipedia explica con detalle la forma de gestión de estos montes. </span></p><p>&nbsp;</p><h2 id='marco-legal'><span>Marco legal</span></h2><p><span>A continuación se muestran las disposiciones legales más relevantes en España y en Andalucía sobre gestión de bosques. No se trata de una descripción exhaustiva ni completamente actualizada. </span></p><h3 id='españa'><span>España:</span></h3><h4 id='ley-432003-de-montes-modificada-por-la-ley-212015'><a href='https://www.boe.es/eli/es/l/2003/11/21/43/con'><span>Ley 43/2003, de Montes, modificada por la Ley 21/2015</span></a></h4><p><span>Es la norma básica que regula la conservación, protección, restauración y aprovechamiento sostenible de los montes españoles. Introduce principios como la gestión forestal sostenible y reconoce los montes como infraestructuras verdes esenciales para el bienestar social y ambiental.</span></p><h4 id='directrices-básicas-comunes-de-gestión-forestal-sostenible-dbcgfs'><a href='https://www.miteco.gob.es/es/biodiversidad/temas/politica-forestal/planificacion-forestal/politica-forestal-en-espana/directrices-gfs.html'><span>Directrices Básicas Comunes de Gestión Forestal Sostenible (DBCGFS)</span></a></h4><p><span>Aprobadas en 2022, estas directrices establecen criterios e indicadores de sostenibilidad adaptados a los montes españoles, así como el contenido mínimo de las instrucciones de ordenación y aprovechamiento de montes. Su objetivo es garantizar una gestión forestal coherente y sostenible en todo el territorio nacional. </span></p><h4 id='ley-422007-del-patrimonio-natural-y-de-la-biodiversidad-modificada-por-la-ley-332015'><a href='https://www.boe.es/eli/es/l/2007/12/13/42/con'><span>Ley 42/2007, del Patrimonio Natural y de la Biodiversidad, modificada por la Ley 33/2015</span></a></h4><p><span>Establece el régimen jurídico para la conservación, uso sostenible y restauración del patrimonio natural y la biodiversidad en España, incluyendo disposiciones específicas para los ecosistemas forestales.</span></p><h4 id='plan-forestal-español-2022--2032'><a href='https://www.miteco.gob.es/es/biodiversidad/temas/politica-forestal/planificacion-forestal/politica-forestal-en-espana/pfe_plan_forestal_esp.html'><span>Plan Forestal Español 2022–2032</span></a></h4><p><span>Es el instrumento de planificación a largo plazo que desarrolla la Estrategia Forestal Española horizonte 2050, orientando la política forestal nacional hacia la sostenibilidad, la adaptación al cambio climático y la conservación de la biodiversidad.</span></p><h3 id='andalucía'><span>Andalucía</span></h3><h4 id='ley-21992-forestal-de-andalucía'><a href='https://www.boe.es/eli/es-an/l/1992/06/15/2/con'><span>Ley 2/1992, Forestal de Andalucía</span></a></h4><p><span>Es la norma principal que regula la política forestal en Andalucía, estableciendo las bases para la conservación, protección y aprovechamiento sostenible de los montes andaluces. </span></p><h4 id='decreto-2081997-reglamento-forestal-de-andalucía'><a href='https://www.juntadeandalucia.es/boja/1997/117/6'><span>Decreto 208/1997, Reglamento Forestal de Andalucía</span></a></h4><p><span>Desarrolla la Ley 2/1992, detallando aspectos como la ordenación de los recursos naturales, los usos y aprovechamientos forestales, y las medidas de conservación y protección del patrimonio forestal andaluz. </span></p><h4 id='anteproyecto-de-ley-de-montes-de-andalucía-en-tramitación'><a href='https://www.juntadeandalucia.es/presidencia/portavoz/tierraymar/197254/JuntadeAndalucia/ConsejodeGobierno'><span>Anteproyecto de Ley de Montes de Andalucía (en tramitación)</span></a></h4><p><span>En septiembre de 2024, la Junta de Andalucía inició la tramitación de una nueva Ley de Montes para actualizar el marco normativo vigente, adaptándolo a los retos actuales como el cambio climático y la necesidad de una gestión forestal más sostenible.</span></p><p>&nbsp;</p><h2 id='retos-de-la-gestión-de-bosques'><span>Retos de la gestión de bosques</span></h2><p><span>Como casi todo lo relativo a la gestión de ecosistemas, hay retos en abundancia...</span></p><p><span>En el caso de la gestión de bosques, nos encontramos ante un caso particular de gestión sectorial. Es, seguramente la disciplina que más tradición tiene de todas las que veremos en la asignatura. Por eso acumula una enorme cantidad de experiencia y conocimiento científico. Quizás por eso, el reto más importante que enfrenta en los próximos años tiene que ver con la adaptación del conocimiento disponible a la incertidumbre que incorpora al sistema el cambio climático. Todo el cuerpo de conocimiento creado por la selvicultura y otras disciplinas forestales en los últimos dos siglos se pone parcialmente en entredicho al cambiar las condiciones climáticas. No es que dejen de tener utilidad ni mucho menos, pero sí aumenta el grado de incertidumbre de las actuaciones propuestas. En la actualidad asistimos a un proceso de reformulación de la selvicultura. En </span><a href='https://github.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/raw/2024_2025/biblio/Calama_selvicultura_adaptativa.pdf'><span>este</span></a><span> artículo se describe con detalle este reto. </span></p><p>&nbsp;</p><hr /><p><a href='https://github.com/aprendiendo-cosas/Te_gestion_forestal_gesteco_ccaa/archive/refs/tags/2024_2025.zip'><span>Aquí</span></a><span> puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.</span></p><hr /><p><span>Haz click </span><a href='https://github.com/aprendiendo-cosas/Te_gestion_forestal_gesteco_ccaa/releases'><span>aquí</span></a><span> para ver cómo ha cambiado este guión en los distintos cursos académicos.</span></p><hr /> <p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> <p>Esta licencia no aplica a enlaces a artículos, libros o imágenes no originales. Estos productos tienen su licencia correspondiente.</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+</body>
+</html>

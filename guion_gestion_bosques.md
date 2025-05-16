@@ -4,9 +4,9 @@
 > + **_Versión_**: 2024-2025
 > +  **_Asignatura (grado)_**: Gestión de ecosistemas (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **Duración**: Una sesión de 1.5 horas.
+> + **Duración**: Unas dos horas.
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/portada.jpg)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/portada.jpg)
 
 
 
@@ -23,7 +23,7 @@ El objetivo de aprendizaje general es aquirir una serie de ideas básicas para e
 
 ## Definición y objetivos de la gestión de bosques
 
-La gestión de bosques comprende un conjunto de técnicas y procedimientos que permiten manejar los ecosistemas forestales para conseguir un objetivo concreto (ej. obtener madera, setas, conservar la diversidad, etc.). El término concreto que se usa en el ámbito forestal para referirse a este tipo de técnicas y procedimientos es Selvicultura. De manera más concreta, la selvicultura se define como el conjunto de técnicas dedicadas a la conservación, mejora, aprovechamiento y regeneración de las masas forestales ([Ley de Montes de España. Artículo 6](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21339#:~:text=Selvicultura,restauraci%C3%B3n%2C%20de%20las%20masas%20forestales)). Así, el concepto más relevante en este ámbito de gestión es la selvicultura. A él dedicaremos esta sección.
+La gestión de bosques comprende un conjunto de técnicas y procedimientos que permiten manejar los ecosistemas forestales para conseguir un objetivo concreto (ej. obtener madera, setas, conservar la diversidad, etc.). El término concreto que se usa en el ámbito forestal para referirse a este tipo de técnicas y procedimientos es Selvicultura. De manera más concreta, la selvicultura se define como el conjunto de técnicas dedicadas a la conservación, mejora, aprovechamiento y regeneración de las masas forestales ([Ley de Montes de España. Artículo 6](https://www.boe.es/buscar/act.php?id=BOE-A-2003-21339#:~:text=Selvicultura,restauraci%C3%B3n%2C%20de%20las%20masas%20forestales)). Así, el concepto más relevante en este ámbito de gestión es la selvicultura. A él dedicaremos esta sección. [Este](https://github.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/raw/2024_2025/biblio/pdf_AM_Ambienta_2009_87_25_34.pdf) artículo contiene muchos de los elementos descritos en este guión. 
 
 Aunque estas técnicas ponen el foco fundamentalmente en el estrato arbóreo, también hay un cuerpo de conocimiento importante en el ámbito del matorral y las herbáceas. Este ámbito sectorial de gestión es, seguramente, el más "ecosistémico" de todos los que vemos en la asignatura. Los profesionales encargados de llevar a cabo la gestión forestal son los ingenieros forestales y los ingenieros técnicos forestales. En estas disciplinas está fuertemente arraigada la visión sistémica.
 
@@ -75,7 +75,6 @@ En general, se considera que la selvicultura se sustenta en los siguientes conce
 Los principios anteriores se aplican de manera diferente en los siguientes tipos de selvicultura: 
 
 
-
 ### Selvicultura monofuncional
 
 Esta modalidad considera que el bosque debe de producir solo un tipo de producto. Es una especie de explotación agrícola con la diferencia de que los productos son forestales. Puede orientarse a la producción de madera, corcho o resina. El objetivo es maximizar la producción de un producto concreto. Con respecto a los principios que rigen la selvicultura, diríamos que en esta modalidad la simplificación es máxima, así como la intervención. La persistencia del bosque está condicionada en buena medida a las actuaciones de manejo que se realizan en ella. 
@@ -99,13 +98,13 @@ El siguiente esquema muestra el ciclo de vida de una explotación maderera monof
 
 
 
-![monofuncional1](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/monofuncional1.png)
+![monofuncional1](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/monofuncional1.png)
 
 El aspecto de estas explotaciones es parecido al que se muestra en la siguiente imagen.
 
 
 
-![monofuncional2](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/main/imagenes/monofuncional2.png)
+![monofuncional2](https://raw.githubusercontent.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/2024_2025/imagenes/monofuncional2.png)
 
 Este tipo de explotaciones monofuncionales aportan aproximadamente la mitad de la producción de madera a escala global. El resto se obtiene de bosques naturales. Desde este punto de vista podemos considerar que la selvicultura monofuncional alivia la presión sobre los bosques naturales. Aunque esto no considera que, probablemente, las explotaciones monofuncionales están donde antes había un bosque mucho más diverso.
 
@@ -208,7 +207,7 @@ En septiembre de 2024, la Junta de Andalucía inició la tramitación de una nue
 
 Como casi todo lo relativo a la gestión de ecosistemas, hay retos en abundancia...
 
-En el caso de la gestión de bosques, nos encontramos ante un caso particular de gestión sectorial. Es, seguramente la disciplina que más tradición tiene de todas las que veremos en la asignatura. Por eso acumula una enorme cantidad de experiencia y conocimiento científico. Quizás por eso, el reto más importante que enfrenta en los próximos años tiene que ver con la adaptación del conocimiento disponible a la incertidumbre que incorpora al sistema el cambio climático. Todo el cuerpo de conocimiento creado por la selvicultura y otras disciplinas forestales en los últimos dos siglos se pone parcialmente en entredicho al cambiar las condiciones climáticas. No es que dejen de tener utilidad ni mucho menos, pero sí aumenta el grado de incertidumbre de las actuaciones propuestas. En la actualidad asistimos a un proceso de reformulación de la selvicultura. En este artículo se describe con detalle este reto. 
+En el caso de la gestión de bosques, nos encontramos ante un caso particular de gestión sectorial. Es, seguramente la disciplina que más tradición tiene de todas las que veremos en la asignatura. Por eso acumula una enorme cantidad de experiencia y conocimiento científico. Quizás por eso, el reto más importante que enfrenta en los próximos años tiene que ver con la adaptación del conocimiento disponible a la incertidumbre que incorpora al sistema el cambio climático. Todo el cuerpo de conocimiento creado por la selvicultura y otras disciplinas forestales en los últimos dos siglos se pone parcialmente en entredicho al cambiar las condiciones climáticas. No es que dejen de tener utilidad ni mucho menos, pero sí aumenta el grado de incertidumbre de las actuaciones propuestas. En la actualidad asistimos a un proceso de reformulación de la selvicultura. En [este](https://github.com/aprendiendo-cosas/Te_gestion_bosques_gesteco_ccaa/raw/2024_2025/biblio/Calama_selvicultura_adaptativa.pdf) artículo se describe con detalle este reto. 
 
 
 
